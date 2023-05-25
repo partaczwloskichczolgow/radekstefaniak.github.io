@@ -1,0 +1,94 @@
+/* Zaimportowanie czcionki z google fonts i zaaplikowanie jej do wszystkich elementów */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Nadanie tłu koloru białego */
+body{
+    background: white;
+}
+/* Personalizacja domyślnych styli bootstrap dla elementów paska nawigacyjnego */
+nav{
+    border-bottom: #115e3e 3px solid;
+}
+.nav-item{
+    margin-left: 20px;
+}
+/* Personalizacja ikony z bezpłatnej bazy ikon ionicons */
+.listek{
+    color: #115e3e;
+    width: 50px;
+    height: 30px;
+}
+/* Personalizacja pojedynczych elementów paska nawigacyjnego i tego co stanie się po najechaniu na nie */
+.kategoria{
+    color: #115e3e;
+}
+.kategoria:hover{
+    transition: 1s;
+    transform: scale(1.05);
+    color: #115e3e;
+}
+.dropdown-item{
+    color: #115e3e;
+}
+.dropdown-item:hover{
+    color: #115e3e;
+}
+.pasek:focus{
+    transition: 1s;
+    transform: scale(1.05);
+    border: #115e3e 2px solid;
+}
+.przyciskszukaj{
+    border: #115e3e 2px solid;
+    color: #115e3e;
+}
+.przyciskszukaj:hover{
+    border: lightgray;
+    background: #115e3e;
+    color: lightgray;
+}
+
+/* Ustawienie "artykułów" z pomocą flexboxu */
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/* Zmiana marginesów dla lepszego efektu wizualnego */
+.card{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+/* Personalizacja większych kartek, użycie flexboxu, aby ustawić w odpowiednim miejscu */
+
+.pojemnikgrubasuw{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.grubas1{
+    background: lightgray;
+    color: black;
+    margin-top: 40px;
+    padding: 10px;
+}
+.grubas2{
+    background: lightgray;
+    color: black;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+/* Prosta stopka strony z moim nazwiskiem */
+
+.futer{
+    border-top: #115e3e 4px solid;
+    margin-top: 20px;
+}
+
